@@ -1,0 +1,382 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* لون الخلفية */
+    color: #333; /* لون النص */
+}
+body {
+    transition: background-color 0.3s, color 0.3s; /* تأثير الانتقال */
+}
+
+.dark-theme {
+    background-color: #333; /* لون الخلفية في الوضع الداكن */
+    color: #fff; /* لون النص في الوضع الداكن */
+}
+
+.dark-theme .navbar {
+    background-color: #555; /* لون خلفية شريط التنقل في الوضع الداكن */
+}
+
+.dark-theme .navbar a {
+    color: #ddd; /* لون النص في الروابط في الوضع الداكن */
+}
+.info {
+    text-align: left; /* محاذاة النص لليسار */
+    margin-right: 20px; /* الهامش على اليمين */
+    order: 1; /* ترتيب المعلومات قبل الصورة */
+}
+
+.info h1 {
+    font-size: 2.5em; /* حجم خط العنوان */
+    margin: 0; /* إزالة الهوامش */
+}
+
+.info h1 .name {
+    color: #007bff; /* لون اسم المستخدم */
+}
+
+.info h1 .greeting {
+    color: #000; /* لون التحية */
+    transition: color 0.3s ease; /* تأثير الانتقال عند تغيير اللون */
+}
+
+.info h2 {
+    font-size: 1.8em; /* حجم خط العنوان الفرعي */
+    color: #ef1313; /* لون النص */
+}
+
+.info p {
+    font-size: 1.2em; /* حجم النص */
+    color: #000000; /* لون النص */
+}
+
+
+.dark-theme .navbar a:hover {
+    background-color: #777; /* تغيير لون الخلفية عند المرور بالفأرة في الوضع الداكن */
+    color: #fff; /* تغيير لون النص عند المرور بالفأرة في الوضع الداكن */
+}
+
+.dark-theme .buttons a {
+    background-color: #ffffff; /* لون خلفية الأزرار في الوضع الداكن */
+    color: #004cff; /* لون النص في الأزرار في الوضع الداكن */
+}
+
+.dark-theme .info p {
+    color: #f20707; /* لون النص في الفقرات في الوضع الداكن */
+}
+
+.dark-theme .info h2 {
+    color: #ffffff; /* لون النص في العناوين الفرعية في الوضع الداكن */
+}
+.dark-theme .info h2 {
+    color: #ffffff; /* لون النص في العناوين الفرعية في الوضع الداكن */
+}
+.dark-theme .buttons a:hover {
+    background-color: #777; /* تغيير لون الخلفية عند المرور بالفأرة في الوضع الداكن */
+}
+
+.dark-theme .info h1 .greeting {
+    color: #fff; /* لون التحية في الوضع الداكن */
+}
+
+.theme-toggle img.sun {
+    display: none; /* إخفاء رمز الشمس في الوضع الداكن */
+}
+
+.dark-theme .theme-toggle img.moon {
+    display: none; /* إخفاء رمز القمر في الوضع الداكن */
+}
+
+.theme-toggle {
+    float: right; /* محاذاة رمز التبديل لليمين */
+    padding: 14px 20px; /* الحشو حول رمز التبديل */
+    cursor: pointer; /* تغيير شكل المؤشر عند التمرير فوق رمز التبديل */
+}
+
+.theme-toggle img {
+    width: 50px; /* عرض رمز التبديل */
+    height: 50px; /* ارتفاع رمز التبديل */
+    transition: filter 0.3s ease; /* تأثير الانتقال عند تغيير اللون */
+}
+
+.theme-toggle img.moon {
+    filter: drop-shadow(0 0 2px #fff) brightness(1.2); /* تأثير الظل على رمز القمر */
+}
+
+.theme-toggle img.sun {
+    filter: drop-shadow(0 0 2px #ff0) brightness(1.5); /* تأثير الظل على رمز الشمس */
+}
+/* الوضع الداكن */
+.dark-theme .skills-container h2 {
+    color: #fff; /* لون النص في الوضع الداكن */
+}
+
+.dark-theme .skills-container .skill {
+    color: #ddd; /* لون الروابط في الوضع الداكن */
+}
+
+.dark-theme .skills-container .skill:hover {
+    color: #fff; /* لون النص عند المرور بالفأرة في الوضع الداكن */
+}
+.navbar-nav {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    z-index: 1000; /* جعله فوق باقي العناصر */
+    width: 100%; /* عرض شريط التنقل */
+}
+
+.nav-link {
+    color: black; /* تغيير لون النص إلى الأسود */
+    font-size: 1.2rem; /* زيادة حجم الخط */
+    transition: background-color 0.3s, color 0.3s; /* تأثير الانتقال */
+}
+
+.navbar-nav a:hover {
+    background-color: #007bff; /* تغيير لون الخلفية عند المرور بالفأرة */
+    color: white; /* تغيير لون النص إلى الأبيض عند المرور بالفأرة */
+    text-decoration: none; /* إزالة التسطير */
+}
+
+body.dark-mode {
+    background-color: black; /* لون خلفية الوضع الداكن */
+    color: white; /* لون النص في الوضع الداكن */
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s; /* تأثير الانتقال للتغيير السلس */
+}
+
+.profile-pic {
+    border-radius: 50%; /* جعل الصورة دائرية */
+    width: 370px; /* عرض الصورة */
+    height: 370px; /* ارتفاع الصورة */
+    margin-left: 200px; /* الهوامش حول الصورة من اليسار */
+    margin-right: 30px; /* الهوامش حول الصورة من اليمين */
+    order: 2; /* ترتيب الصورة بعد المعلومات */
+}
+
+
+.d-none {
+    display: none; /* إخفاء العنصر */
+}
+
+.info {
+    text-align: left; /* محاذاة النص لليسار */
+    margin-right: 20px; /* الهامش على اليمين */
+    order: 1; /* ترتيب المعلومات قبل الصورة */
+}
+
+.info h1 {
+    font-size: 2.5em; /* حجم خط العنوان */
+    margin: 0; /* إزالة الهوامش */
+}
+
+.info h1 .name {
+    color: #007bff; /* لون اسم المستخدم */
+}
+
+.info h1 .greeting {
+    color: #000; /* لون التحية */
+    transition: color 0.3s ease; /* تأثير الانتقال عند تغيير اللون */
+}
+
+.info h2 {
+    font-size: 1.8em; /* حجم خط العنوان الفرعي */
+    color: #ef1313; /* لون النص */
+}
+
+.info p {
+    font-size: 1.2em; /* حجم النص */
+    color: #000000; /* لون النص */
+}
+
+.highlight {
+    color: #007bff;
+}
+
+.card {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.card:hover {
+    background-color: #ffffff; /* لون خلفية البطاقة عند المرور بالفأرة */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5); /* زيادة تأثير الظل عند المرور بالفأرة */
+    transform: translateY(10px); /* تحريك الكارت 10 بكسل إلى الأسفل عند التحويم */
+    color: #007bff;
+}
+
+.card i  {
+    font-size: 3em; /* حجم الأيقونة */
+    color: #007bff; /* لون الأيقونة */
+    margin-bottom: 10px; /* الهامش أسفل الأيقونة */
+}
+
+.card h2 {
+    margin: 0; /* إزالة الهوامش */
+    font-size: 1.2em; /* حجم خط العنوان الفرعي */
+    color: #231a6e; /* لون النص */
+}
+
+.card p {
+    margin: 5px 0; /* الهوامش حول النص */
+    font-size: 1em; /* حجم الخط */
+    color: #000000; /* لون النص */
+}
+
+/* بداية قسم المهارات */
+.skill:hover {
+    background-color: #ac8686; /* لون خلفية الأيقونات عند المرور بالفأرة */
+    box-shadow: 10px 520px 30px rgba(0, 0, 0, 0.5); /* زيادة تأثير الظل عند المرور بالفأرة */
+    text-decoration: none; /* إزالة الخط السفلي من الروابط */
+    transition: transform 0.3s ease; /* إضافة تأثير التدرج لتكبير الأيقونة */
+    transform: scale(1.2); /* تكبير الأيقونة عند التحويم بنسبة 20% */
+}
+
+.skill i {
+    font-size: 3em;
+    color: #007bff; /* لون الأيقونة */
+    margin-bottom: 10px;
+}
+
+.skill h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333; /* لون النص */
+}
+
+/* تنسيق حاوية الأعمال */
+.portfolio-container {
+    display: flex; /* استخدام Flexbox */
+    flex-wrap: wrap; /* السماح بلف العناصر في صفوف */
+    gap: 50px; /* المسافة بين العناصر */
+    justify-content: space-between; /* توزيع العناصر بشكل متساوي */
+    width: 80%; /* عرض الحاوية */
+    max-width: 1200px; /* الحد الأقصى لعرض الحاوية */
+    margin: 40px auto; /* محاذاة الحاوية في الوسط */
+}
+
+.portfolio img {
+    width:2000px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+}
+.portfolio img:hover {
+    transform: scale(1.1); /* تكبير الصورة عند التمرير */
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.buttons a {
+    display: inline-block; /* لجعل الأزرار بجانب بعضها البعض */
+    text-decoration: none; /* إزالة التسطير */
+    color: white; /* لون النص */
+    background-color: #333; /* لون خلفية الأزرار */
+    padding: 5px 20px; /* تقليل الحشو لتصغير حجم الأزرار */
+    border-radius: 10px; /* تحديد زوايا الأزرار */
+    margin: 10px; /* الهوامش حول الأزرار */
+    font-size: 20px;
+}
+
+.buttons a:hover {
+    background-color: #555; /* تغيير لون الخلفية عند المرور بالفأرة */
+    color: #ff0000; /* تغيير لون النص عند المرور بالفأرة */
+    text-decoration: none; /* إزالة التسطير */
+}
+
+/* تنسيق القسم الخاص بالتواصل */
+.custom-contact {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-contact h3 {
+    font-size: 24px;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.custom-contact .contact-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.custom-contact .contact-item span {
+    margin-right: 200px; /* مسافة بين النص والرابط */
+    color: #555;
+}
+
+.custom-contact a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.custom-contact a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيق الأيقونات في قسم وسائل التواصل الاجتماعي */
+.custom-social {
+    display: flex; /* استخدام Flexbox */
+    justify-content: space-around; /* توزيع الأيقونات بشكل متساوي */
+    margin-top: 10px; /* مسافة أعلى الأيقونات */
+}
+
+.custom-social a {
+    color: #0073e6; /* لون الأيقونات */
+    text-decoration: none; /* إزالة التسطير */
+    font-size: 20px; /* حجم الأيقونات */
+}
+
+.custom-social a:hover {
+    color: #0056b3; /* تغيير اللون عند التمرير */
+}
+/* الحاوية العامة لشريط التقدم */
+.progress {
+    height: 15px;
+    background-color: #ddd; /* لون الخلفية الافتراضي للحاوية */
+    border-radius: 10px;
+    overflow: hidden; /* إخفاء أي تجاوزات */
+}
+
+/* الشريط الخاص باللغة الإنجليزية */
+.progress-bar-english {
+    background: linear-gradient(to left, #0059ff 0%, #3b0303 50%, #0cdb05 100%); /* تدرج ألوان أخضر */
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* ملء الحاوية بالكامل */
+    border-radius: 10px;
+    animation: progress-fill 3s linear; /* حركة الشريط */
+}
+
+/* الشريط الخاص باللغة العربية */
+.progress-bar-arabic {
+    background: linear-gradient(to left, #0066ff 0%, #000000 50%, #007bff 100%); /* تدرج ألوان أزرق */
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* ملء الحاوية بالكامل */
+    border-radius: 10px;
+    animation: progress-fill 3s linear; /* حركة الشريط */
+}
+
+/* تعريف حركة التقدم */
+@keyframes progress-fill {
+    0% {
+        width: 0; /* بداية الشريط من الصفر */
+    }
+    100% {
+        width: 100%; /* وصول الشريط إلى 100% */
+    }
+}
